@@ -38,4 +38,9 @@ public class testController : MonoBehaviour
     {
         speed = speedBuffer;
     }
+
+    public void extScriptSetSpeed(int newSpeed)
+    {
+        speed = newSpeed;
+    }
 }
