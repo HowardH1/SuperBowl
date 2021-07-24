@@ -536,7 +536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62698090}
   m_LocalRotation: {x: -0.35855874, y: 0.09316574, z: -0.31503272, w: 0.8737907}
-  m_LocalPosition: {x: 6.23, y: 2.46, z: -2.4707584}
+  m_LocalPosition: {x: 6.23, y: 2.46, z: -2.976}
   m_LocalScale: {x: 0.32467, y: 0.32467, z: 0.32467}
   m_Children:
   - {fileID: 686891807}
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 30
+    m_Left: 4
     m_Right: 0
     m_Top: 30
     m_Bottom: 0
@@ -1200,7 +1200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186362399}
   m_LocalRotation: {x: -0.35855874, y: 0.09316574, z: -0.31503272, w: 0.8737907}
-  m_LocalPosition: {x: 7.16, y: 1.482, z: 1.71}
+  m_LocalPosition: {x: 7.16, y: 1.482, z: 2.8109999}
   m_LocalScale: {x: 0.32467, y: 0.32467, z: 0.32467}
   m_Children:
   - {fileID: 1029719968}
@@ -1992,6 +1992,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   speed: 5
   Turn_Radius: 2
+  shotBounds: 18
 --- !u!33 &339259155
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2069,7 +2070,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339259153}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9d5aff421d7f87b4c83235feadbc921f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2100,7 +2101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f0c6f2eeb60c374aad117bde2bd80a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.9831698
+      value: -3.4884114
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f0c6f2eeb60c374aad117bde2bd80a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3595,6 +3596,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64897295093513044, guid: 3a06599b558a48449b83202f7d654300, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 9d5aff421d7f87b4c83235feadbc921f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a06599b558a48449b83202f7d654300, type: 3}
 --- !u!1 &680312973
@@ -7224,7 +7229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f50da248aa3fb334ab1caff0974120bf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.794
+      value: 2.895
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f50da248aa3fb334ab1caff0974120bf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9092,7 +9097,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138276866}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9d5aff421d7f87b4c83235feadbc921f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

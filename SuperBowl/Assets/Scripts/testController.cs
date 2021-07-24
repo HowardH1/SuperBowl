@@ -6,8 +6,14 @@ public class testController : MonoBehaviour
 {
     public Rigidbody rb;
     public float speed;
-    private float speedBuffer;
     public float Turn_Radius;
+    public float shotBounds;
+
+    private float angleTransform;
+    private float angleTransformBuffer;
+    private float speedBuffer;
+    private bool canAngleTransform = true;
+
 
     private void Start()
     {
@@ -21,26 +27,55 @@ public class testController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        angleTransform = Input.GetAxis("Angle Ball Transform");
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+        checkTransformAngleBoundary();
 
         Vector3 dirmovement = new Vector3(-moveVertical, 0.0f, moveHorizontal);
 
         rb.AddForce(dirmovement * speed);
     }
 
+    private void checkTransformAngleBoundary()
+    {
+        if(angleTransformBuffer >= shotBounds || angleTransformBuffer <= -shotBounds)
+        {
+            canAngleTransform = false;
+            if (angleTransformBuffer >= shotBounds)
+            {
+                if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKey(KeyCode.LeftArrow))
+                {
+                    angleTransformZAxis();
+                }
+            }
+            else if (angleTransformBuffer <= -shotBounds)
+            {
+                if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKey(KeyCode.RightArrow))
+                {
+                    angleTransformZAxis();
+                }
+            }
+        }
+        else
+        {
+            angleTransformZAxis();
+        }
+    }
+
+    public void angleTransformZAxis()
+    {
+        canAngleTransform = true;
+        float xPos = gameObject.transform.position.x;
+        float yPos = gameObject.transform.position.y;
+        Vector3 newPos = new Vector3(0, 0, angleTransform);
+        gameObject.transform.position += (newPos / 10);
+        angleTransformBuffer += angleTransform;  
+    }
+
+    //Functions to remove player control during cutscenes or non-game instances
     public void removeSpeedForCinematic()
     {
         speed = 0;
-    }
-
-    public void setSpeedPostCinematic()
-    {
-        speed = speedBuffer;
-    }
-
-    public void extScriptSetSpeed(int newSpeed)
-    {
-        speed = newSpeed;
     }
 }
