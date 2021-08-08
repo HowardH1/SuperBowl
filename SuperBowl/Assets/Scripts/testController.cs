@@ -5,10 +5,11 @@ using UnityEngine;
 public class testController : MonoBehaviour
 {
     public Rigidbody rb;
+    public FollowPlayer camera;
     public float speed;
     public float Turn_Radius;
     public float shotBounds;
-
+    
     private float angleTransform;
     private float angleTransformBuffer;
     private float speedBuffer;
@@ -28,13 +29,14 @@ public class testController : MonoBehaviour
     private void FixedUpdate()
     {
         angleTransform = Input.GetAxis("Angle Ball Transform");
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        //float moveHorizontal = Input.GetAxis("Horizontal");
+        //float moveVertical = Input.GetAxis("Vertical");
         checkTransformAngleBoundary();
+        bowl();
 
-        Vector3 dirmovement = new Vector3(-moveVertical, 0.0f, moveHorizontal);
+        //Vector3 dirmovement = new Vector3(-moveVertical, 0.0f, moveHorizontal);
 
-        rb.AddForce(dirmovement * speed);
+        //rb.AddForce(dirmovement * speed);
     }
 
     private void checkTransformAngleBoundary()
@@ -60,6 +62,18 @@ public class testController : MonoBehaviour
         else
         {
             angleTransformZAxis();
+        }
+    }
+
+    private void bowl()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyUp(KeyCode.Space) || Input.GetKey(KeyCode.Space))
+        {
+            rb.AddForce(Camera.main.transform.forward * speed * 5);
+            if(speed > 0)
+            {
+                camera.canRotate = true;
+            }
         }
     }
 
