@@ -6,7 +6,6 @@ public class testController : MonoBehaviour
 {
     public Rigidbody rb;
     public FollowPlayer camera;
-    public float timeLeft = 20;
     public float speed;
     public float Turn_Radius;
     public float shotBounds;
@@ -16,9 +15,8 @@ public class testController : MonoBehaviour
     private float angleTransform;
     private float angleTransformBuffer;
     private float speedBuffer;
-    private float timeBuffer;
     private bool canAngleTransform = true;
-    private bool resetTimer = false;
+    private bool canBowl = true;
     private Vector3 originalPos;
     private Quaternion originalRot;
     private Vector3[] pinPos = new Vector3[10];
@@ -27,7 +25,6 @@ public class testController : MonoBehaviour
 
     private void Start()
     {
-        timeBuffer = timeLeft;
         for(int pin = 0; pin < Pins.Length; pin++)
         {
             pinPos[pin] = Pins[pin].transform.position;
@@ -40,19 +37,19 @@ public class testController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (resetTimer == true)
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyUp(KeyCode.E) || Input.GetKey(KeyCode.E))
         {
-            timeLeft -= Time.deltaTime;
-            if (timeLeft < 0)
-            {
-                resetBallPosition();
-            }
+            resetBallPosition();
         }
+
         angleTransform = Input.GetAxis("Angle Ball Transform");
         //float moveHorizontal = Input.GetAxis("Horizontal");
         //float moveVertical = Input.GetAxis("Vertical");
         checkTransformAngleBoundary();
-        bowl();
+        if(canBowl == true)
+        {
+            bowl();
+        }  
 
         //Vector3 dirmovement = new Vector3(-moveVertical, 0.0f, moveHorizontal);
 
@@ -66,14 +63,14 @@ public class testController : MonoBehaviour
             canAngleTransform = false;
             if (angleTransformBuffer >= shotBounds)
             {
-                if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKey(KeyCode.LeftArrow))
+                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyUp(KeyCode.A) || Input.GetKey(KeyCode.A))
                 {
                     angleTransformZAxis();
                 }
             }
             else if (angleTransformBuffer <= -shotBounds)
             {
-                if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKey(KeyCode.RightArrow))
+                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyUp(KeyCode.D) || Input.GetKey(KeyCode.D))
                 {
                     angleTransformZAxis();
                 }
@@ -89,11 +86,11 @@ public class testController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyUp(KeyCode.Space) || Input.GetKey(KeyCode.Space))
         {
-            rb.AddForce(Camera.main.transform.forward * speed * 5);
+            rb.AddForce(Camera.main.transform.forward * speed * 17);
             if(speed > 0)
             {
                 camera.canRotate = true;
-                resetTimer = true;
+                canBowl = false;
             }
         }
     }
@@ -128,7 +125,8 @@ public class testController : MonoBehaviour
             Pins[pin].transform.rotation = pinRot[pin];
             Debug.Log("Pin " + pin + " reset");
         }
-        resetTimer = false;
-        timeLeft = timeBuffer;
+        angleTransformBuffer = 0;
+        camera.canRotate = false;
+        canBowl = true;
     }
 }

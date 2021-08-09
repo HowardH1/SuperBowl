@@ -35,11 +35,11 @@ public class FollowPlayer : MonoBehaviour
 
     void enterRotationMode()
     {
-        if(Input.GetKeyDown(KeyCode.R) && canRotate == false)
+        if(Input.GetKeyDown(KeyCode.Mouse1) && canRotate == false)
         {
             canRotate = true;
         }
-        else if(Input.GetKeyUp(KeyCode.R) && canRotate == true)
+        else if(Input.GetKeyUp(KeyCode.Mouse1) && canRotate == true)
         {
             canRotate = false;
         }
