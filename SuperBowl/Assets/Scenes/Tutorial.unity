@@ -4361,7 +4361,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 729385405}
   selectedCommands:
-  - {fileID: 729385420}
+  - {fileID: 729385417}
   variables:
   - {fileID: 729385411}
   description: 
@@ -4874,7 +4874,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   storyText: Once you have set up your shot, Press SPACE to fire. You will not need
-    to hold R to move the camera during your shot.
+    to hold the Right Mouse Button to move the camera during your shot.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
