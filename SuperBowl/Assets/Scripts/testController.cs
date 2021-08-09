@@ -6,28 +6,48 @@ public class testController : MonoBehaviour
 {
     public Rigidbody rb;
     public FollowPlayer camera;
+    public float timeLeft = 20;
     public float speed;
     public float Turn_Radius;
     public float shotBounds;
+    public GameObject[] Pins = new GameObject[10];
+    public Rigidbody[] pinRB = new Rigidbody[10];
     
     private float angleTransform;
     private float angleTransformBuffer;
     private float speedBuffer;
+    private float timeBuffer;
     private bool canAngleTransform = true;
+    private bool resetTimer = false;
+    private Vector3 originalPos;
+    private Quaternion originalRot;
+    private Vector3[] pinPos = new Vector3[10];
+    private Quaternion[] pinRot = new Quaternion[10];
 
 
     private void Start()
     {
+        timeBuffer = timeLeft;
+        for(int pin = 0; pin < Pins.Length; pin++)
+        {
+            pinPos[pin] = Pins[pin].transform.position;
+            pinRot[pin] = Pins[pin].transform.rotation;
+        }
+        originalPos = gameObject.transform.position;
+        originalRot = gameObject.transform.rotation;
         speedBuffer = speed;
         rb = GetComponent<Rigidbody>();
     }
-    private void Update()
-    {
-
-    }
-
     private void FixedUpdate()
     {
+        if (resetTimer == true)
+        {
+            timeLeft -= Time.deltaTime;
+            if (timeLeft < 0)
+            {
+                resetBallPosition();
+            }
+        }
         angleTransform = Input.GetAxis("Angle Ball Transform");
         //float moveHorizontal = Input.GetAxis("Horizontal");
         //float moveVertical = Input.GetAxis("Vertical");
@@ -73,6 +93,7 @@ public class testController : MonoBehaviour
             if(speed > 0)
             {
                 camera.canRotate = true;
+                resetTimer = true;
             }
         }
     }
@@ -91,5 +112,23 @@ public class testController : MonoBehaviour
     public void removeSpeedForCinematic()
     {
         speed = 0;
+    }
+
+    public void resetBallPosition()
+    {
+        gameObject.transform.position = originalPos;
+        gameObject.transform.rotation = originalRot;
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        for (int pin = 0; pin < 10; pin++)
+        {
+            pinRB[pin].velocity = Vector3.zero;
+            pinRB[pin].angularVelocity = Vector3.zero;
+            Pins[pin].transform.position = pinPos[pin];
+            Pins[pin].transform.rotation = pinRot[pin];
+            Debug.Log("Pin " + pin + " reset");
+        }
+        resetTimer = false;
+        timeLeft = timeBuffer;
     }
 }

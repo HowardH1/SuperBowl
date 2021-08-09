@@ -5,13 +5,13 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public Transform target;
-    [Range(0.01f, 1.0f)]
+    [Range(0f, 1.0f)]
     public float smooth = 0.5f;
     public float rotationSpeed = 5f;
     public bool canRotate = false;
     private Vector3 cameraOffset;
     private Vector3 velocity = Vector3.zero;
-    
+
     // Start is called before the first frame update
     void Start()
     {
