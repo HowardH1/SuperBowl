@@ -5140,9 +5140,11 @@ MonoBehaviour:
   player: {fileID: 339259154}
   rb: {fileID: 339259158}
   bridge: {fileID: 1969802154}
-  height: 0
-  speed: 0
+  heightLimit: 10
   triggered: 0
+  returnToOrigin: 0
+  height: 0
+  bridgeBuffer: {x: 0, y: 0, z: 0}
 --- !u!1 &503380377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
@@ -7367,7 +7369,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67.9011
     y: 73.0989
-    width: 121.208786
+    width: 121.428566
     height: 40
   tint: {r: 1, g: 0.3647059, b: 0.65882355, a: 1}
   useCustomTint: 1
