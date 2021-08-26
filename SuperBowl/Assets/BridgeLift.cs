@@ -24,7 +24,7 @@ public class BridgeLift : MonoBehaviour
         }
         else
         {
-            bridge.transform.position = Vector3.Lerp(bridgeBuffer, new Vector3(0, bridge.transform.position.y - 15, 0), 3f );
+            bridge.transform.position = Vector3.Lerp(bridgeBuffer, new Vector3(0, bridge.transform.position.y + 15, 0), 3f );
             triggered = true;
         }
     }

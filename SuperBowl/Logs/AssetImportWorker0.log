@@ -1,10 +1,10 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16238 MB
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16300 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-E:\Unity\2020.3.8f1\Editor\Unity.exe
+D:\Unity\2020.3.8f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,426 +15,359 @@ C:/Users/BUMBL/Documents/GitHub/SuperBowl/SuperBowl
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53205
+49538
 Successfully changed project path to: C:/Users/BUMBL/Documents/GitHub/SuperBowl/SuperBowl
 C:/Users/BUMBL/Documents/GitHub/SuperBowl/SuperBowl
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 98.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 32.95 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
-[Subsystems] Discovering subsystems at path E:/Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/BUMBL/Documents/GitHub/SuperBowl/SuperBowl/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c20)
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
     Vendor:   
-    VRAM:     6052 MB
-    Driver:   27.21.14.5167
+    VRAM:     12143 MB
+    Driver:   30.0.14.7141
 Initialize mono
-Mono path[0] = 'E:/Unity/2020.3.8f1/Editor/Data/Managed'
-Mono path[1] = 'E:/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'E:/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Mono path[0] = 'D:/Unity/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56092
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001927 seconds.
+Register platform support module: D:/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000928 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 80.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 34.49 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.584 seconds
+- Completed reload, in  0.660 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001283 seconds.
+Registered in 0.000752 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001A5F6E59D20 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FBBA2030 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FC7A9A90 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FB750480 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 66.09 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 33.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.799 seconds
+- Completed reload, in  0.648 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2450 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2451 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 119.7 MB.
-System memory in use after: 119.8 MB.
+System memory in use after: 119.9 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2912.
-Total: 3.936800 ms (FindLiveObjects: 0.472800 ms CreateObjectMapping: 0.212200 ms MarkObjects: 3.034900 ms  DeleteObjects: 0.214200 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Sounds/Music/Pink Lemon Daydreams.wav
-  artifactKey: Guid(61c94818974f36e469051b2e70d908f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Music/Pink Lemon Daydreams.wav using Guid(61c94818974f36e469051b2e70d908f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e702393a76c9f858bd960571cf25b4a6') in 0.207664 seconds
-  Import took 0.215652 seconds .
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2913.
+Total: 1.971300 ms (FindLiveObjects: 0.244100 ms CreateObjectMapping: 0.097000 ms MarkObjects: 1.532800 ms  DeleteObjects: 0.096200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000584 seconds.
-  path: Assets/Sounds/Music/Neo-Tokyo (Chromatique Remix).mp3
-  artifactKey: Guid(521e192258b0d9342b833e6d14c106fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Music/Neo-Tokyo (Chromatique Remix).mp3 using Guid(521e192258b0d9342b833e6d14c106fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20a719b0f8dff2a62e1f75db5f45709') in 0.013125 seconds
-  Import took 0.018000 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002958 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A5FC6D7020 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FC9B5010 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FE002AB0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.670 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.03 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2385 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.8 MB.
-System memory in use after: 116.9 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2924.
-Total: 6.277800 ms (FindLiveObjects: 0.454000 ms CreateObjectMapping: 0.173300 ms MarkObjects: 5.465100 ms  DeleteObjects: 0.182100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003311 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A5FBD40010 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FB694010 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A441B52060 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.432 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2385 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.8 MB.
-System memory in use after: 117.0 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2927.
-Total: 5.568300 ms (FindLiveObjects: 0.439200 ms CreateObjectMapping: 0.222200 ms MarkObjects: 4.792600 ms  DeleteObjects: 0.112400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001449 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A5FB3FE020 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A44386A610 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A441B52060 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.135 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.8 MB.
-System memory in use after: 117.0 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2931.
-Total: 2.623800 ms (FindLiveObjects: 0.357700 ms CreateObjectMapping: 0.101600 ms MarkObjects: 2.079300 ms  DeleteObjects: 0.084400 ms)
+  path: Assets/low poly pack/Lowpoly tree2.fbx
+  artifactKey: Guid(b2c61055c4a01ad43b08434f8178e1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Lowpoly tree2.fbx using Guid(b2c61055c4a01ad43b08434f8178e1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc03caa195e50fe9ff8e39df33f5167d') in 1.274285 seconds
+  Import took 1.280418 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2427.317178 seconds.
-  path: Assets/49-495212_dark-grey-wallpaper-03-high-resolution-gray-background.jpg
-  artifactKey: Guid(32cc4c2456d9dd449a31f13d68eaf6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/49-495212_dark-grey-wallpaper-03-high-resolution-gray-background.jpg using Guid(32cc4c2456d9dd449a31f13d68eaf6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8a31a1865b31c4cad2d4d51de129add') in 0.239687 seconds
-  Import took 0.244342 seconds .
+  Time since last request: 15.462054 seconds.
+  path: Assets/low poly pack/Rock
+  artifactKey: Guid(2116448cbe2367d49bcd01015b4b454c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock using Guid(2116448cbe2367d49bcd01015b4b454c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89877e5c905ba990ad563d04c63658ae') in 0.002021 seconds
+  Import took 0.005190 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/PowerSliderLabel.JPG
-  artifactKey: Guid(85c80f5d3f199a54d99c732f552f4aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PowerSliderLabel.JPG using Guid(85c80f5d3f199a54d99c732f552f4aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f10a12da773af201a9cea872ffa200a') in 0.013235 seconds
-  Import took 0.017467 seconds .
+  Time since last request: 0.003423 seconds.
+  path: Assets/low poly pack/Rock
+  artifactKey: Guid(2116448cbe2367d49bcd01015b4b454c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock using Guid(2116448cbe2367d49bcd01015b4b454c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89877e5c905ba990ad563d04c63658ae') in 0.001597 seconds
+  Import took 0.004118 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000353 seconds.
-  path: Assets/PostProcessProfile.asset
-  artifactKey: Guid(8ebc42bd1c052e645bea81ee801de860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PostProcessProfile.asset using Guid(8ebc42bd1c052e645bea81ee801de860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c664cc1ec738e2b43d3467d6266a4ff') in 0.016785 seconds
-  Import took 0.021113 seconds .
+  Time since last request: 1.510065 seconds.
+  path: Assets/low poly pack/Rock/New Material.mat
+  artifactKey: Guid(6d6dba2824eb3b74fb1730ded1d50438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock/New Material.mat using Guid(6d6dba2824eb3b74fb1730ded1d50438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a6349251f125f1b87e2d61a3aa9a23') in 0.058931 seconds
+  Import took 0.062259 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000389 seconds.
-  path: Assets/Bowling Lane Physics.physicMaterial
-  artifactKey: Guid(9d5aff421d7f87b4c83235feadbc921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bowling Lane Physics.physicMaterial using Guid(9d5aff421d7f87b4c83235feadbc921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35da2267b59c011d5d6554b775cefc0') in 0.005776 seconds
-  Import took 0.010150 seconds .
+  Time since last request: 0.000145 seconds.
+  path: Assets/low poly pack/Rock/rock3.prefab
+  artifactKey: Guid(5cf5680f3c3895349b25c3b50dfb2918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock/rock3.prefab using Guid(5cf5680f3c3895349b25c3b50dfb2918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023b179811daf9d08f018cf6972977bc') in 0.008564 seconds
+  Import took 0.011151 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000321 seconds.
-  path: Assets/retrowave background.jpg
-  artifactKey: Guid(7dc391bb2ede16e4a8fd80875e11355a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/retrowave background.jpg using Guid(7dc391bb2ede16e4a8fd80875e11355a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c424d3cafb6d985dc6082e115a4ca39') in 0.015444 seconds
-  Import took 0.019798 seconds .
+  Time since last request: 0.000138 seconds.
+  path: Assets/low poly pack/Rock/rock4.prefab
+  artifactKey: Guid(1a720e216eb87964aa570792dff939f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock/rock4.prefab using Guid(1a720e216eb87964aa570792dff939f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f5b3e964b02008874d4b25f41da87e') in 0.007510 seconds
+  Import took 0.010100 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001400 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A4435F6170 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A44386A610 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6ECE020 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.605 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.9 MB.
-System memory in use after: 117.1 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2941.
-Total: 4.427600 ms (FindLiveObjects: 0.560600 ms CreateObjectMapping: 0.209000 ms MarkObjects: 3.496900 ms  DeleteObjects: 0.158400 ms)
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/low poly pack/Rock/Rock5.prefab
+  artifactKey: Guid(ad69e332a1d80ce4d875aa1931fc2a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock/Rock5.prefab using Guid(ad69e332a1d80ce4d875aa1931fc2a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da43e9c9e435b4c63b51b284a30741a') in 0.024589 seconds
+  Import took 0.027368 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002580 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A4435F6170 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FD2C5020 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A4439D20B0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.214 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.9 MB.
-System memory in use after: 117.1 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2944.
-Total: 3.144300 ms (FindLiveObjects: 0.396100 ms CreateObjectMapping: 0.198400 ms MarkObjects: 2.431800 ms  DeleteObjects: 0.116300 ms)
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/low poly pack/Rock/RockOne.prefab
+  artifactKey: Guid(9d549cd7872e12f42b7b6ee15c43fc7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock/RockOne.prefab using Guid(9d549cd7872e12f42b7b6ee15c43fc7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5af80b432019c32891a632c5431f77') in 0.025390 seconds
+  Import took 0.028398 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001937 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A4435F6170 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FF1F08A0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A4439D20B0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.524 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.0 MB.
-System memory in use after: 117.1 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2947.
-Total: 3.525600 ms (FindLiveObjects: 0.371200 ms CreateObjectMapping: 0.147800 ms MarkObjects: 2.893700 ms  DeleteObjects: 0.111600 ms)
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/low poly pack/Rock/Stone.prefab
+  artifactKey: Guid(093b91cb02a0557469861b1daf4e2745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock/Stone.prefab using Guid(093b91cb02a0557469861b1daf4e2745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '386311f864ccf2d3e8fc3080745223bb') in 0.060854 seconds
+  Import took 0.063977 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001655 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A4435F6170 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A442579FD0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A4453F8040 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.702 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.0 MB.
-System memory in use after: 117.1 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2950.
-Total: 2.818400 ms (FindLiveObjects: 0.286400 ms CreateObjectMapping: 0.140700 ms MarkObjects: 2.274000 ms  DeleteObjects: 0.116000 ms)
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/low poly pack/Rock/rock6.prefab
+  artifactKey: Guid(0c7a358b557ecf841854bb8052e98f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock/rock6.prefab using Guid(0c7a358b557ecf841854bb8052e98f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfc54415b95a28262e45c46ee57370c9') in 0.044716 seconds
+  Import took 0.047568 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001702 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A44385A030 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FF1F08A0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FDE31020 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.576 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.0 MB.
-System memory in use after: 117.1 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2953.
-Total: 2.849200 ms (FindLiveObjects: 0.327600 ms CreateObjectMapping: 0.166400 ms MarkObjects: 2.237700 ms  DeleteObjects: 0.115900 ms)
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/low poly pack/Rock/Rocktwo.prefab
+  artifactKey: Guid(114b721f56e233244a40b2dc5e0d0057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Rock/Rocktwo.prefab using Guid(114b721f56e233244a40b2dc5e0d0057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e417f9a83fe47982529c90fd541d8f2') in 0.041058 seconds
+  Import took 0.043893 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001757 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A5FB921030 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A442579FD0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A447755CE0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.301 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.0 MB.
-System memory in use after: 117.1 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2956.
-Total: 2.898300 ms (FindLiveObjects: 0.313600 ms CreateObjectMapping: 0.131200 ms MarkObjects: 2.340300 ms  DeleteObjects: 0.111800 ms)
+Received Import Request.
+  Time since last request: 3324.867756 seconds.
+  path: Assets/low poly pack/Terain
+  artifactKey: Guid(65496f1c8fae21c4384070808e8169e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain using Guid(65496f1c8fae21c4384070808e8169e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ce3ca6103f9898427b4e38e2354dd9') in 0.002184 seconds
+  Import took 0.005960 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001508 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A44385A030 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FEBB7C40 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A447755CE0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.535 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.0 MB.
-System memory in use after: 117.1 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2959.
-Total: 3.745300 ms (FindLiveObjects: 0.529300 ms CreateObjectMapping: 0.203200 ms MarkObjects: 2.886800 ms  DeleteObjects: 0.123000 ms)
+Received Import Request.
+  Time since last request: 0.078804 seconds.
+  path: Assets/low poly pack/Terain/Grass.prefab
+  artifactKey: Guid(72229693aaee3b24fbadcec09fa83b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain/Grass.prefab using Guid(72229693aaee3b24fbadcec09fa83b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ac01456ceb74911e22aaad42de2e3c') in 0.014424 seconds
+  Import took 0.017816 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001644 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A4490EF0C0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A4474F62C0 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5F6CADA50 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A5FEBE0380 doesn't match image C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.345 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 117.0 MB.
-System memory in use after: 117.1 MB.
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/low poly pack/Terain/grass2.prefab
+  artifactKey: Guid(bf67beae2d4953447953edcca56c08c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain/grass2.prefab using Guid(bf67beae2d4953447953edcca56c08c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332f7cb67c8a045115bdd989c4a0bb55') in 0.007643 seconds
+  Import took 0.010746 seconds .
 
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2962.
-Total: 3.095900 ms (FindLiveObjects: 0.288200 ms CreateObjectMapping: 0.124700 ms MarkObjects: 2.570700 ms  DeleteObjects: 0.111000 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/low poly pack/Terain/rock.prefab
+  artifactKey: Guid(f0e4d4df8bc9ea14eb35b1169bc74720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain/rock.prefab using Guid(f0e4d4df8bc9ea14eb35b1169bc74720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ac64225cfe2b7890261d42571dc272') in 0.015327 seconds
+  Import took 0.018460 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/low poly pack/Terain/Snow.prefab
+  artifactKey: Guid(58a28c43aece91c4f8d4e8e4e2c7d44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain/Snow.prefab using Guid(58a28c43aece91c4f8d4e8e4e2c7d44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf238261d8f1318f9eb95ab214e71aea') in 0.006849 seconds
+  Import took 0.010447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/low poly pack/Terain/Island 2.prefab
+  artifactKey: Guid(5646abc556d558249902f0a6b84a55c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain/Island 2.prefab using Guid(5646abc556d558249902f0a6b84a55c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500bc3725787e3f075df3ddd5b7d46c1') in 0.016349 seconds
+  Import took 0.019792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/low poly pack/Terain/Island.prefab
+  artifactKey: Guid(b1195d70df4a8174c8aa1ae02d07c16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain/Island.prefab using Guid(b1195d70df4a8174c8aa1ae02d07c16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62484eaf882f00e9894050f8212dd3c5') in 0.009628 seconds
+  Import took 0.013065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/low poly pack/Terain/terain.prefab
+  artifactKey: Guid(7b80874909f9a3645bdd024faac3a7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain/terain.prefab using Guid(7b80874909f9a3645bdd024faac3a7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9a1911bf4ef01e9c39af7810cc0265') in 0.027600 seconds
+  Import took 0.030942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/low poly pack/Terain/Rock3.prefab
+  artifactKey: Guid(6c6ac5996141f824792d21fbc3544ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain/Rock3.prefab using Guid(6c6ac5996141f824792d21fbc3544ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c0226bef90e12a1b6eeecc079a0cc6') in 0.006837 seconds
+  Import took 0.009597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/low poly pack/Terain/rock2.prefab
+  artifactKey: Guid(306e8b551f8f8ef4ebf6a804240027bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Terain/rock2.prefab using Guid(306e8b551f8f8ef4ebf6a804240027bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46809bb3d7b1f5fe381e50b62faf911') in 0.025509 seconds
+  Import took 0.028381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 189.296641 seconds.
+  path: Assets/low poly pack/Particle
+  artifactKey: Guid(1e89af59806b59e4fa801c7d8d4ce0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle using Guid(1e89af59806b59e4fa801c7d8d4ce0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d230156f1a9e2b00bdd9461ccd37f5') in 0.002114 seconds
+  Import took 0.005760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.565223 seconds.
+  path: Assets/low poly pack/Particle/Material
+  artifactKey: Guid(df757981f11a0b54085682ab372c8f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Material using Guid(df757981f11a0b54085682ab372c8f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e709d5191091035ed65bd62aae4347c') in 0.001991 seconds
+  Import took 0.005653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000653 seconds.
+  path: Assets/low poly pack/Particle/Material
+  artifactKey: Guid(df757981f11a0b54085682ab372c8f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Material using Guid(df757981f11a0b54085682ab372c8f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e709d5191091035ed65bd62aae4347c') in 0.001515 seconds
+  Import took 0.003987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.085209 seconds.
+  path: Assets/low poly pack/Particle/Material/New Material 1.mat
+  artifactKey: Guid(142444612133b12468e8924d3235430f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Material/New Material 1.mat using Guid(142444612133b12468e8924d3235430f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ce84dd907fbda6bc293f43c2e1555e') in 0.025012 seconds
+  Import took 0.028448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/low poly pack/Particle/Material/New Material.mat
+  artifactKey: Guid(a86ed2fe9ad806f4db2b0b41516945b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Material/New Material.mat using Guid(a86ed2fe9ad806f4db2b0b41516945b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ec8c31447de438c8f57059740be325') in 0.005614 seconds
+  Import took 0.008721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/low poly pack/Particle/Material/New Material 2.mat
+  artifactKey: Guid(dac143f36e578e44cbcb98dfd4431dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Material/New Material 2.mat using Guid(dac143f36e578e44cbcb98dfd4431dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f826777430872c0deb982a939fd68d14') in 0.006550 seconds
+  Import took 0.010012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.513274 seconds.
+  path: Assets/low poly pack/Particle/Perfab
+  artifactKey: Guid(c9a2444ae31ea834180aa87bae209603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Perfab using Guid(c9a2444ae31ea834180aa87bae209603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e7e29e14b506ac3c00d3bee5f242ac') in 0.002211 seconds
+  Import took 0.005601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000620 seconds.
+  path: Assets/low poly pack/Particle/Perfab
+  artifactKey: Guid(c9a2444ae31ea834180aa87bae209603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Perfab using Guid(c9a2444ae31ea834180aa87bae209603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e7e29e14b506ac3c00d3bee5f242ac') in 0.001535 seconds
+  Import took 0.004083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.098206 seconds.
+  path: Assets/low poly pack/Particle/Perfab/Dust.prefab
+  artifactKey: Guid(adf0738bacbec9143bac3c19518ab89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Perfab/Dust.prefab using Guid(adf0738bacbec9143bac3c19518ab89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4fba45d7ed5accd76388e53db010f97') in 0.005069 seconds
+  Import took 0.008205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/low poly pack/Particle/Perfab/Flames.prefab
+  artifactKey: Guid(23b0bcc2b392efd44bd0eef1dfc415a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Perfab/Flames.prefab using Guid(23b0bcc2b392efd44bd0eef1dfc415a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c213c3fc2c54b22b18905a103f09f2') in 0.003187 seconds
+  Import took 0.005421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/low poly pack/Particle/Perfab/Flames2 .prefab
+  artifactKey: Guid(e251dc28f26d85749ad5f7e5fbfde962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Perfab/Flames2 .prefab using Guid(e251dc28f26d85749ad5f7e5fbfde962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c033764397c57d9f565d06739974ee6') in 0.003028 seconds
+  Import took 0.005239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/low poly pack/Particle/Perfab/Flames 1.prefab
+  artifactKey: Guid(1d0e4f1499cebaa4992504fcb17e8871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Perfab/Flames 1.prefab using Guid(1d0e4f1499cebaa4992504fcb17e8871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec75c7d7aade8184beb48aabe44c840') in 0.003761 seconds
+  Import took 0.006216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.456221 seconds.
+  path: Assets/low poly pack/Particle/Flaer
+  artifactKey: Guid(ef19e809f7b54aa4e9e7af0283863f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Flaer using Guid(ef19e809f7b54aa4e9e7af0283863f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957be54879dc97d7fbdb97f53f3aebc7') in 0.002218 seconds
+  Import took 0.005551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.169705 seconds.
+  path: Assets/low poly pack/Particle/Flaer/Mesh1.prefab
+  artifactKey: Guid(f9f7c4700b7ea2d48a21b3ceea37a3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Flaer/Mesh1.prefab using Guid(f9f7c4700b7ea2d48a21b3ceea37a3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e56d272de2401c4c0b250b98ac48b7') in 0.011309 seconds
+  Import took 0.015365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/low poly pack/Particle/Flaer/Untitled3.fbx
+  artifactKey: Guid(d69afc0e00807c54ead7f69429ca37ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Flaer/Untitled3.fbx using Guid(d69afc0e00807c54ead7f69429ca37ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c5d2467a6fda97e25e29de0d7fa9ef') in 0.055416 seconds
+  Import took 0.058378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/low poly pack/Particle/Flaer/Untitled.fbx
+  artifactKey: Guid(b7a23aef7ea122d498f42bf9a04098bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Flaer/Untitled.fbx using Guid(b7a23aef7ea122d498f42bf9a04098bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03469732bd3f95b0873814ec4f5e506') in 0.047009 seconds
+  Import took 0.049952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/low poly pack/Particle/Flaer/Untitled2.fbx
+  artifactKey: Guid(b09a128a42d73884e815da0134493483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low poly pack/Particle/Flaer/Untitled2.fbx using Guid(b09a128a42d73884e815da0134493483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff6d219840cd0ff8a50f75a09695e65a') in 0.038752 seconds
+  Import took 0.042057 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
