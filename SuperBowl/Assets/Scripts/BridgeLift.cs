@@ -8,10 +8,12 @@ public class BridgeLift : MonoBehaviour
     public testController player;
     public Rigidbody rb;
     public GameObject bridge;
+    public GameObject bridgeTarget;
+    public int speed;
+    public int height;
     public int heightLimit;
     public bool triggered = false;
     public bool returnToOrigin = false;
-    public int height;
     public Vector3 bridgeBuffer;
 
     private void Start()
@@ -21,7 +23,11 @@ public class BridgeLift : MonoBehaviour
 
     private void Update()
     {
-        checkBridgeMovement();
+        //checkBridgeMovement();
+        if(triggered == true)
+        {
+            StartCoroutine(WaitCoroutine());
+        }
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -36,7 +42,7 @@ public class BridgeLift : MonoBehaviour
         }
     }
 
-    private void checkBridgeMovement()
+    /*private void checkBridgeMovement()
     {
         if (triggered == true)
         {
@@ -60,5 +66,15 @@ public class BridgeLift : MonoBehaviour
                 Debug.Log("IF 3");
             }
         }
+    }*/
+
+    IEnumerator WaitCoroutine()
+    {
+        bridge.transform.position = Vector3.MoveTowards(bridge.transform.position, bridgeTarget.transform.position, speed * Time.deltaTime);
+
+        yield return new WaitForSeconds(5f);
+
+        bridge.transform.position = Vector3.MoveTowards(bridge.transform.position, bridgeBuffer, speed * Time.deltaTime);
+        triggered = false;      
     }
 }

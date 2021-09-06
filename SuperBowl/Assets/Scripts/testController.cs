@@ -39,7 +39,7 @@ public class testController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyUp(KeyCode.E) || Input.GetKey(KeyCode.E))
         {
-            resetBallPosition();
+            resetLevelPosition();
         }
 
         angleTransform = Input.GetAxis("Angle Ball Transform");
@@ -111,7 +111,7 @@ public class testController : MonoBehaviour
         speed = 0;
     }
 
-    public void resetBallPosition()
+    public void resetLevelPosition()
     {
         gameObject.transform.position = originalPos;
         gameObject.transform.rotation = originalRot;

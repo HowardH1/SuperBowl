@@ -17,7 +17,7 @@ public class ResetSpawn : MonoBehaviour
         }
         else
         {
-            player.resetBallPosition();
+            player.resetLevelPosition();
         }
     }
 }
