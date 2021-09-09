@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637658501750797846
-    m_Hash: 3070890375
+      ticks: 637665686368467728
+    m_Hash: 2617430819
   m_LockFileStatus:
     m_FilePath: C:/Users/BUMBL/Documents/GitHub/SuperBowl/SuperBowl/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637658501750827863
-    m_Hash: 603583863
+      ticks: 637665686368477734
+    m_Hash: 3766245296
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -453,6 +453,7 @@ m_PackageAssets:
         - 1.2.1
         - 1.2.2
         - 1.2.3
+        - 1.2.4
         compatible:
         - 1.0.2
         - 1.0.3
@@ -465,7 +466,8 @@ m_PackageAssets:
         - 1.2.1
         - 1.2.2
         - 1.2.3
-        verified: 1.2.3
+        - 1.2.4
+        verified: 1.2.4
       dependencies: []
       resolvedDependencies: []
       keywords: []
@@ -509,8 +511,10 @@ m_PackageAssets:
       status: 4
       errors: []
       versions:
-        all: []
-        compatible: []
+        all:
+        - 0.1.0
+        compatible:
+        - 0.1.0
         verified: 
       dependencies:
       - name: com.unity.modules.ai

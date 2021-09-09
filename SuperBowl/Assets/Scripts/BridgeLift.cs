@@ -10,11 +10,13 @@ public class BridgeLift : MonoBehaviour
     public GameObject bridge;
     public GameObject bridgeTarget;
     public int speed;
-    public int height;
-    public int heightLimit;
     public bool triggered = false;
     public bool returnToOrigin = false;
-    public Vector3 bridgeBuffer;
+    public float volume = 0.5f;
+    public AudioSource aS;
+    public AudioClip aC;
+
+    private Vector3 bridgeBuffer;
 
     private void Start()
     {
@@ -23,7 +25,6 @@ public class BridgeLift : MonoBehaviour
 
     private void Update()
     {
-        //checkBridgeMovement();
         if(triggered == true)
         {
             StartCoroutine(WaitCoroutine());
@@ -39,41 +40,15 @@ public class BridgeLift : MonoBehaviour
         else
         {
             triggered = true;
+            aS.PlayOneShot(aC, volume);
         }
     }
 
-    /*private void checkBridgeMovement()
-    {
-        if (triggered == true)
-        {
-            Debug.Log("IF 0");
-            if (bridge.transform.position.y !>= heightLimit && returnToOrigin == false)
-            {
-                bridge.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
-                Debug.Log("IF 1");
-            }
-            else if (bridge.transform.position.y >= heightLimit)
-            {
-                returnToOrigin = true;
-                bridge.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
-                Debug.Log("IF 2");
-            }
-            else if (bridge.transform.position.y <= bridgeBuffer.y && returnToOrigin == true)
-            {
-                bridge.transform.position = bridgeBuffer;
-                returnToOrigin = false;
-                triggered = false;
-                Debug.Log("IF 3");
-            }
-        }
-    }*/
 
     IEnumerator WaitCoroutine()
     {
         bridge.transform.position = Vector3.MoveTowards(bridge.transform.position, bridgeTarget.transform.position, speed * Time.deltaTime);
-
-        yield return new WaitForSeconds(5f);
-
+        yield return new WaitForSeconds(5f);    
         bridge.transform.position = Vector3.MoveTowards(bridge.transform.position, bridgeBuffer, speed * Time.deltaTime);
         triggered = false;      
     }
