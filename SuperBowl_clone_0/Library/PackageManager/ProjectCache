@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637665652622196867
-    m_Hash: 3808886576
+      ticks: 637671784031922626
+    m_Hash: 911438136
   m_LockFileStatus:
     m_FilePath: C:/Users/BUMBL/Documents/GitHub/SuperBowl/SuperBowl_clone_0/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637665652622226875
-    m_Hash: 237322208
+      ticks: 637671784031932642
+    m_Hash: 3168568939
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -3330,8 +3330,8 @@ m_PackageAssets:
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665649805735998
-      m_Hash: 284637180
+        ticks: 637671784032568313
+      m_Hash: 320806380
     - m_FilePath: C:\Users\BUMBL\Documents\GitHub\SuperBowl\SuperBowl\ParrelSync-master\ParrelSync
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
