@@ -5685,7 +5685,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 729385405}
   selectedCommands:
-  - {fileID: 729385409}
+  - {fileID: 729385421}
   variables:
   - {fileID: 729385411}
   description: 
@@ -6312,8 +6312,8 @@ MonoBehaviour:
   storyText: 'Get creative with your shots, and I hope you enjoy!
 
 
-    Music: Neo-Tokyo
-    (Chromatique Remix)'
+    Music: Pink
+    Lemon Daydreams (Demo)'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
