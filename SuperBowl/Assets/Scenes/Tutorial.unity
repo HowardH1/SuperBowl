@@ -612,6 +612,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fe65fec31a96cc49a3146a03f035c48, type: 3}
+--- !u!1 &36375008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36375010}
+  - component: {fileID: 36375009}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &36375009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36375008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9cde861fab6f934d864ab32c14bf3be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  points: 00000000000000000000000000000000
+  Pins:
+  - {fileID: 503380377}
+  - {fileID: 1558240047}
+  - {fileID: 2061308522}
+  - {fileID: 906423064}
+  - {fileID: 1991804000}
+  - {fileID: 1472116455}
+  - {fileID: 1161325881}
+  - {fileID: 1172487329}
+  - {fileID: 116795117}
+  - {fileID: 1111899447}
+  pinRB:
+  - {fileID: 503380378}
+  - {fileID: 1558240049}
+  - {fileID: 2061308524}
+  - {fileID: 906423066}
+  - {fileID: 1991804002}
+  - {fileID: 1472116457}
+  - {fileID: 1161325883}
+  - {fileID: 1172487331}
+  - {fileID: 116795119}
+  - {fileID: 1111899449}
+  player: {fileID: 339259154}
+--- !u!4 &36375010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36375008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -680.1887, y: 24.053995, z: -124.869156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 67
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &42084818 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1146793164422210, guid: 093b91cb02a0557469861b1daf4e2745, type: 3}
@@ -3718,28 +3790,10 @@ MonoBehaviour:
   speed: 25
   Turn_Radius: 2
   shotBounds: 18
-  Pins:
-  - {fileID: 503380377}
-  - {fileID: 1558240047}
-  - {fileID: 2061308522}
-  - {fileID: 906423064}
-  - {fileID: 1991804000}
-  - {fileID: 1472116455}
-  - {fileID: 1161325881}
-  - {fileID: 1172487329}
-  - {fileID: 116795117}
-  - {fileID: 1111899447}
-  pinRB:
-  - {fileID: 503380378}
-  - {fileID: 1558240049}
-  - {fileID: 2061308524}
-  - {fileID: 906423066}
-  - {fileID: 1991804002}
-  - {fileID: 1472116457}
-  - {fileID: 1161325883}
-  - {fileID: 1172487331}
-  - {fileID: 116795119}
-  - {fileID: 1111899449}
+  canBowl: 1
+  originalPos: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  angleTransformBuffer: 0
 --- !u!33 &339259155
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11628,6 +11682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerBall
       objectReference: {fileID: 0}
+    - target: {fileID: 184454, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 451620, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -16399,7 +16457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 339259159}
-  player: {fileID: 339259154}
+  gameControl: {fileID: 0}
   rb: {fileID: 339259158}
   triggered: 0
 --- !u!64 &1825208316
