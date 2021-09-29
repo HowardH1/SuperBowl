@@ -52,7 +52,7 @@ public class GameRound : MonoBehaviour
         }
     }
 
-    public void addPoint()
+    public void addPoint(Collider collision)
     {
         for (int i = 0; i < 4; i++)
         {
