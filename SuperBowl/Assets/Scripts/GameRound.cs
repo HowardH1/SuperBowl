@@ -7,6 +7,7 @@ public class GameRound : MonoBehaviour
 {
     public GameObject[] players = new GameObject[4];
     public int[] points = new int[4];
+    public int[,,] turnScoreHolder = new int[4, 12, 2];
     public GameObject[] Pins = new GameObject[10];
     public Rigidbody[] pinRB = new Rigidbody[10];
     public Dictionary<GameObject, int> GameData = new Dictionary<GameObject, int>();
@@ -52,14 +53,6 @@ public class GameRound : MonoBehaviour
         }
     }
 
-    public void addPoint(Collider collision)
-    {
-        for (int i = 0; i < 4; i++)
-        {
-
-        }
-            
-    }
 
     public void resetLevelPosition()
     {
@@ -73,10 +66,16 @@ public class GameRound : MonoBehaviour
             pinRB[pin].angularVelocity = Vector3.zero;
             Pins[pin].transform.position = pinPos[pin];
             Pins[pin].transform.rotation = pinRot[pin];
+            Pins[pin].GetComponent<PinCollision>().wasHitOnce = false;
             Debug.Log("Pin " + pin + " reset");
         }
         player.angleTransformBuffer = 0;
         player.camera.canRotate = false;
         player.canBowl = true;
+    }
+
+    public void ScoreKeeper()
+    {
+
     }
 }
