@@ -16,6 +16,7 @@ public class MP_Lobby : NetworkBehaviour
 
     private NetworkList<MP_PlayerInfo> nwPlayers = new NetworkList<MP_PlayerInfo>();
     public Button startGameButton;
+    [SerializeField] private GameObject chatPrefab;
     void Start()
     {
         UpdateConnListServerRpc(NetworkManager.LocalClientId);
@@ -69,20 +70,39 @@ public class MP_Lobby : NetworkBehaviour
 
     public void StartGame()
     {
-        Debug.Log("START");
         if (IsServer)
-        { 
-            foreach(MP_PlayerInfo tmpClient in nwPlayers)
-            {
-                GameObject playerSpawn = Instantiate(playerPrefab, new Vector3(2f, 1f, 7f), Quaternion.identity);
-                playerSpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
-                Debug.Log("PLAYER SPAWNED FOR: " + tmpClient.networkPlayerName);
-            }
+        {
+            NetworkSceneManager.OnSceneSwitched += SceneSwitched;
             NetworkSceneManager.SwitchScene("Tutorial");
         }
         else
         {
-            Debug.Log("YOU ARE NOT THE HOST");
+            Debug.Log("You are not the host");
+        }
+    }
+
+    private void SceneSwitched()
+    {
+        GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
+
+        //spawn a playerprefab for each connected client
+        foreach (MP_PlayerInfo tmpClient in nwPlayers)
+        {
+            //get random spawn point location
+            UnityEngine.Random.InitState((int)System.DateTime.Now.Ticks);
+            int index = UnityEngine.Random.Range(0, spawnPoints.Length);
+            GameObject currentPoint = spawnPoints[index];
+
+            //spawn player
+            GameObject playerSpawn = Instantiate(playerPrefab, currentPoint.transform.position, Quaternion.identity);
+            playerSpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
+            // Debug.Log("Player spawned for: " + tmpClient.networkPlayerName);
+
+            //add chat ui
+            GameObject chatUISpawn = Instantiate(chatPrefab);
+            chatUISpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
+            chatUISpawn.GetComponent<MP_ChatUI>().chatPlayers = nwPlayers;
+
         }
     }
 
