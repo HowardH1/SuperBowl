@@ -6,7 +6,7 @@ using UnityEngine;
 public class ResetSpawn : MonoBehaviour
 {
     public Collider target;
-    public testController player;
+    public GameRound gameControl;
     public Rigidbody rb;
     public bool triggered = false;
     void OnTriggerEnter(Collider collision)
@@ -17,7 +17,7 @@ public class ResetSpawn : MonoBehaviour
         }
         else
         {
-            player.resetLevelPosition();
+            gameControl.resetLevelPosition();
         }
     }
 }

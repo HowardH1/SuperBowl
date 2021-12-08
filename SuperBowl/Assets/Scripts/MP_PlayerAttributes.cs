@@ -18,6 +18,8 @@ public class MP_PlayerAttributes : NetworkBehaviour
 
     public NetworkVariableInt kills = new NetworkVariableInt(0);
     public NetworkVariableInt deaths = new NetworkVariableInt(0);
+    public NetworkVariableBool activePlayer = new NetworkVariableBool(false);
+
     // Update is called once per frame
     void Update()
     {
@@ -89,13 +91,10 @@ public class MP_PlayerAttributes : NetworkBehaviour
     private void ResetPlayerClientRpc()
     {
         //Set position to spawn point
-        GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
-        //get random spawn point location
-        UnityEngine.Random.InitState((int)System.DateTime.Now.Ticks);
-        int index = UnityEngine.Random.Range(0, spawnPoints.Length);
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
 
         GetComponent<CharacterController>().enabled = false;
-        transform.position = spawnPoints[index].transform.position;
+        transform.position = spawnPoint.transform.position;
         GetComponent<CharacterController>().enabled = true;
     }
 

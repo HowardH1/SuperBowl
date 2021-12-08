@@ -83,18 +83,14 @@ public class MP_Lobby : NetworkBehaviour
 
     private void SceneSwitched()
     {
-        GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
 
         //spawn a playerprefab for each connected client
         foreach (MP_PlayerInfo tmpClient in nwPlayers)
         {
-            //get random spawn point location
-            UnityEngine.Random.InitState((int)System.DateTime.Now.Ticks);
-            int index = UnityEngine.Random.Range(0, spawnPoints.Length);
-            GameObject currentPoint = spawnPoints[index];
-
+            GameObject InitialLevelPosition = spawnPoint;
             //spawn player
-            GameObject playerSpawn = Instantiate(playerPrefab, currentPoint.transform.position, Quaternion.identity);
+            GameObject playerSpawn = Instantiate(playerPrefab, InitialLevelPosition.transform.position, Quaternion.identity);
             playerSpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
             // Debug.Log("Player spawned for: " + tmpClient.networkPlayerName);
 
@@ -102,7 +98,7 @@ public class MP_Lobby : NetworkBehaviour
             GameObject chatUISpawn = Instantiate(chatPrefab);
             chatUISpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
             chatUISpawn.GetComponent<MP_ChatUI>().chatPlayers = nwPlayers;
-
+            //playerPrefab.GetComponent<testController>.pinRB[] = 
         }
     }
 

@@ -8,6 +8,7 @@ TagManager:
   - MedKit
   - PowerUp
   - SpawnPoint
+  - Pin
   layers:
   - Default
   - TransparentFX
