@@ -10,8 +10,6 @@ using System;
 public class MP_PlayerAttributes : NetworkBehaviour
 {
     private float maxHp = 100f;
-    private float damageVal = 20f;
-    private float healVal = 25f;
     public NetworkVariableBool powerUp = new NetworkVariableBool(false);
     private NetworkVariableFloat currentHp = new NetworkVariableFloat(100f);
 
@@ -37,7 +35,14 @@ public class MP_PlayerAttributes : NetworkBehaviour
     {
         if(collision.gameObject.CompareTag("Pin") && IsOwner)
         {
-            increasePointCountServerRpc();
+            foreach(GameObject pin in GameObject.FindGameObjectsWithTag("Pin"))
+            {
+                if(pin.GetComponent<PinCollision>().getPinState() && pin.GetComponent<PinCollision>().wasHitOnce == false)
+                {
+                    pin.GetComponent<PinCollision>().wasHitOnce = true;
+                    increasePointCountServerRpc();
+                }
+            }
         }
     }
 

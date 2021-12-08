@@ -20,7 +20,6 @@ public class MP_ChatUI : NetworkBehaviour
     public GameObject scoreCardPanel;
     public Text scoreplayerName;
     public Text scoreKills;
-    public Text scoreDeaths;
     private bool showScore = false;
 
     // Start is called before the first frame update
@@ -119,7 +118,6 @@ public class MP_ChatUI : NetworkBehaviour
         {
             scoreplayerName.text += networkPlayerName + "\n";
             scoreKills.text += kills + "\n";
-            scoreDeaths.text += deaths + "\n";
         }
     }
 
@@ -130,7 +128,6 @@ public class MP_ChatUI : NetworkBehaviour
         {
             scoreplayerName.text = "";
             scoreKills.text = "";
-            scoreDeaths.text = "";
         }
     }
 }

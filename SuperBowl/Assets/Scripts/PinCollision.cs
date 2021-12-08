@@ -30,7 +30,7 @@ public class PinCollision : MonoBehaviour
         }
     }
 
-    private bool getPinState()
+    public bool getPinState()
     {
         if (gameObject.transform.rotation.x != 0 || gameObject.transform.rotation.z != 0)
         {
