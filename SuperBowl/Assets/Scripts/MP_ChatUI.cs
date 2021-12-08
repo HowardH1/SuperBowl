@@ -106,7 +106,7 @@ public class MP_ChatUI : NetworkBehaviour
             {
                 if(playerObject.GetComponent<NetworkObject>().OwnerClientId == playerInfo.networkClientID)
                 {
-                    updateUIScoreClientRpc(playerInfo.networkPlayerName, playerObject.GetComponent<MP_PlayerAttributes>().kills.Value, playerObject.GetComponent<MP_PlayerAttributes>().deaths.Value);
+                    updateUIScoreClientRpc(playerInfo.networkPlayerName, playerObject.GetComponent<MP_PlayerAttributes>().points.Value, playerObject.GetComponent<MP_PlayerAttributes>().deaths.Value);
                 }
             }
         }

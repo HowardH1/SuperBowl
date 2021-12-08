@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 1859767560801901594}
   - component: {fileID: 1859767560801901585}
   - component: {fileID: 1859767560801901584}
+  - component: {fileID: 9098735451037852953}
   m_Layer: 0
   m_Name: PlayerBall
   m_TagString: Player
@@ -264,28 +265,10 @@ MonoBehaviour:
   speed: 25
   Turn_Radius: 2
   shotBounds: 18
-  Pins:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  pinRB:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  canBowl: 1
+  originalPos: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  angleTransformBuffer: 0
 --- !u!114 &1859767560801901585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,6 +334,27 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9098735451037852953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859767560128743327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c8efc4296c23a4e8ac9955db1a42d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpBar: {fileID: 0}
+  powerUp:
+    m_InternalValue: 0
+  points:
+    m_InternalValue: 0
+  deaths:
+    m_InternalValue: 0
+  activePlayer:
+    m_InternalValue: 0
 --- !u!1 &1859767560128947331
 GameObject:
   m_ObjectHideFlags: 0

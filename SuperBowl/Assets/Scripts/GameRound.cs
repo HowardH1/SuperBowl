@@ -11,7 +11,6 @@ public class GameRound : MonoBehaviour
     public GameObject[] Pins = new GameObject[10];
     public Rigidbody[] pinRB = new Rigidbody[10];
     public Dictionary<GameObject, int> GameData = new Dictionary<GameObject, int>();
-    public testController player;
 
     private Vector3[] pinPos = new Vector3[10];
     private Quaternion[] pinRot = new Quaternion[10];

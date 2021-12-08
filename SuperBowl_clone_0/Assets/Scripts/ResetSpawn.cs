@@ -17,7 +17,7 @@ public class ResetSpawn : MonoBehaviour
         }
         else
         {
-            gameControl.resetLevelPosition();
+            //gameControl.resetLevelPosition();
         }
     }
 }

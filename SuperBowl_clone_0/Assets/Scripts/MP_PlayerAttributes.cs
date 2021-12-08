@@ -9,21 +9,19 @@ using System;
 
 public class MP_PlayerAttributes : NetworkBehaviour
 {
-    public Slider hpBar;
     private float maxHp = 100f;
     private float damageVal = 20f;
     private float healVal = 25f;
     public NetworkVariableBool powerUp = new NetworkVariableBool(false);
     private NetworkVariableFloat currentHp = new NetworkVariableFloat(100f);
 
-    public NetworkVariableInt kills = new NetworkVariableInt(0);
+    public NetworkVariableInt points = new NetworkVariableInt(0);
     public NetworkVariableInt deaths = new NetworkVariableInt(0);
     public NetworkVariableBool activePlayer = new NetworkVariableBool(false);
 
     // Update is called once per frame
     void Update()
     {
-        hpBar.value = currentHp.Value / maxHp;
         if(currentHp.Value <= 0)
         {
             RespawnPlayerServerRpc();
@@ -37,26 +35,9 @@ public class MP_PlayerAttributes : NetworkBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Bullet") && IsOwner)
+        if(collision.gameObject.CompareTag("Pin") && IsOwner)
         {
-            if(collision.gameObject.GetComponent<MP_BulletScript>().spawnerPlayerId != OwnerClientId)
-            {
-                if(currentHp.Value - damageVal <= 0)
-                {
-                    increaseKillCountServerRpc(collision.gameObject.GetComponent<MP_BulletScript>().spawnerPlayerId);
-                }
-                TakeDamageServerRpc(damageVal);
-                Destroy(collision.gameObject);
-            }
-        }
-        else if(collision.gameObject.CompareTag("MedKit") && IsOwner)
-        {
-            HealDamageServerRpc(healVal);
-        }
-        else if (collision.gameObject.CompareTag("PowerUp") && IsOwner)
-        {
-            damageVal = damageVal / 2;
-            powerUp.Value = true;
+            increasePointCountServerRpc();
         }
     }
 
@@ -99,16 +80,17 @@ public class MP_PlayerAttributes : NetworkBehaviour
     }
 
     [ServerRpc]
-    private void increaseKillCountServerRpc(ulong spawnerPlayerId)
+    private void increasePointCountServerRpc()
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         foreach(GameObject playerObject in players)
         {
-            if(playerObject.GetComponent<NetworkObject>().OwnerClientId == spawnerPlayerId)
-            {
-                Debug.LogWarning("KILL TRACKED");
-                playerObject.GetComponent<MP_PlayerAttributes>().kills.Value++;
-            }
+            Debug.LogWarning("PIN TRACKED");
+            playerObject.GetComponent<MP_PlayerAttributes>().points.Value++;
+            //if (playerObject.GetComponent<NetworkObject>().OwnerClientId == spawnerPlayerId)
+            //{
+                
+            //}
         }
     }
 }

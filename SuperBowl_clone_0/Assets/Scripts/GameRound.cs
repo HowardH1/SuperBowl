@@ -11,7 +11,6 @@ public class GameRound : MonoBehaviour
     public GameObject[] Pins = new GameObject[10];
     public Rigidbody[] pinRB = new Rigidbody[10];
     public Dictionary<GameObject, int> GameData = new Dictionary<GameObject, int>();
-    public testController player;
 
     private Vector3[] pinPos = new Vector3[10];
     private Quaternion[] pinRot = new Quaternion[10];
@@ -40,12 +39,10 @@ public class GameRound : MonoBehaviour
             pinPos[pin] = Pins[pin].transform.position;
             pinRot[pin] = Pins[pin].transform.rotation;
         }
-        player.originalPos = gameObject.transform.position;
-        player.originalRot = gameObject.transform.rotation;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    /*void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyUp(KeyCode.E) || Input.GetKey(KeyCode.E))
         {
@@ -77,5 +74,5 @@ public class GameRound : MonoBehaviour
     public void ScoreKeeper()
     {
 
-    }
+    }*/
 }

@@ -93,7 +93,6 @@ public class MP_Lobby : NetworkBehaviour
             GameObject playerSpawn = Instantiate(playerPrefab, InitialLevelPosition.transform.position, Quaternion.identity);
             playerSpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
             // Debug.Log("Player spawned for: " + tmpClient.networkPlayerName);
-
             //add chat ui
             GameObject chatUISpawn = Instantiate(chatPrefab);
             chatUISpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
