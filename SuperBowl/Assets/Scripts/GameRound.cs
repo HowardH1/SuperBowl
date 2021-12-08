@@ -40,12 +40,10 @@ public class GameRound : MonoBehaviour
             pinPos[pin] = Pins[pin].transform.position;
             pinRot[pin] = Pins[pin].transform.rotation;
         }
-        player.originalPos = gameObject.transform.position;
-        player.originalRot = gameObject.transform.rotation;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    /*void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyUp(KeyCode.E) || Input.GetKey(KeyCode.E))
         {
@@ -77,5 +75,5 @@ public class GameRound : MonoBehaviour
     public void ScoreKeeper()
     {
 
-    }
+    }*/
 }
