@@ -22,6 +22,9 @@ public class MP_ChatUI : NetworkBehaviour
     public Text scoreKills;
     private bool showScore = false;
 
+    public testController playerBall;
+    public Slider powerSliderUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +62,7 @@ public class MP_ChatUI : NetworkBehaviour
         {
             scoreCardPanel.SetActive(showScore);
         }
+        playerBall.speed = powerSliderUI.value;
     }
 
     public void handleSend()
@@ -128,6 +132,22 @@ public class MP_ChatUI : NetworkBehaviour
         {
             scoreplayerName.text = "";
             scoreKills.text = "";
+        }
+    }
+
+    [ServerRpc]
+    private void assignSliderServerRpc()
+    {
+        GameObject[] currentPlayers = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject playerObject in currentPlayers)
+        {
+            foreach (MP_PlayerInfo playerInfo in chatPlayers)
+            {
+                if (playerObject.GetComponent<NetworkObject>().OwnerClientId == playerInfo.networkClientID)
+                {
+                    playerBall = playerObject.GetComponent<testController>();
+                }
+            }
         }
     }
 }

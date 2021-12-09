@@ -22,6 +22,15 @@ public class MainMenu : NetworkBehaviour
         NetworkManager.Singleton.StartClient();
         Debug.Log("Client Started");
     }
+    public void playGame()
+    {
+        NetworkSceneManager.SwitchScene("MainMenu_Play 1");
+    }
+
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 
     /*public void quitGame()
     {

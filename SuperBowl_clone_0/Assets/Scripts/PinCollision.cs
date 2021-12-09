@@ -17,9 +17,7 @@ public class PinCollision : MonoBehaviour
                 {
                     if (getPinState() && isHit && wasHitOnce == false)
                     {
-                        gameController.GameData[player] += 1;
-                        wasHitOnce = true;
-                        Debug.Log("Current Points: " + gameController.GameData[player]);
+                        
                     }
                 }
                 else

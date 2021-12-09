@@ -9,6 +9,7 @@ TagManager:
   - PowerUp
   - SpawnPoint
   - Pin
+  - StorePoint
   layers:
   - Default
   - TransparentFX

@@ -17,32 +17,12 @@ public class MP_PlayerAttributes : NetworkBehaviour
     public NetworkVariableInt deaths = new NetworkVariableInt(0);
     public NetworkVariableBool activePlayer = new NetworkVariableBool(false);
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(currentHp.Value <= 0)
-        {
-            RespawnPlayerServerRpc();
-            ResetPlayerClientRpc();
-            if(IsOwner)
-            {
-                Debug.LogWarning("You have died");
-            }
-        }
-    }
 
     public void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Pin") && IsOwner)
+        if (collision.gameObject.CompareTag("Pin") && IsOwner)
         {
-            foreach(GameObject pin in GameObject.FindGameObjectsWithTag("Pin"))
-            {
-                if(pin.GetComponent<PinCollision>().getPinState() && pin.GetComponent<PinCollision>().wasHitOnce == false)
-                {
-                    pin.GetComponent<PinCollision>().wasHitOnce = true;
-                    increasePointCountServerRpc();
-                }
-            }
+            increasePointCountServerRpc();
         }
     }
 
@@ -74,28 +54,39 @@ public class MP_PlayerAttributes : NetworkBehaviour
     }
 
     [ClientRpc]
-    private void ResetPlayerClientRpc()
+    public void ResetPlayerClientRpc()
     {
         //Set position to spawn point
         GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
-
-        GetComponent<CharacterController>().enabled = false;
+        GetComponent<testController>().enabled = false;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         transform.position = spawnPoint.transform.position;
-        GetComponent<CharacterController>().enabled = true;
+        GetComponent<testController>().enabled = true;
+        GetComponent<testController>().canBowl = true;
+    }
+
+    [ClientRpc]
+    public void StorePlayerClientRpc(int index)
+    {
+        //Set position to store point
+        GameObject[] storePoints = GameObject.FindGameObjectsWithTag("StorePoint");
+        GetComponent<testController>().enabled = false;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        transform.position = storePoints[index].transform.position;
     }
 
     [ServerRpc]
     private void increasePointCountServerRpc()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        foreach(GameObject playerObject in players)
+        foreach (GameObject pin in GameObject.FindGameObjectsWithTag("Pin"))
         {
-            Debug.LogWarning("PIN TRACKED");
-            playerObject.GetComponent<MP_PlayerAttributes>().points.Value++;
-            //if (playerObject.GetComponent<NetworkObject>().OwnerClientId == spawnerPlayerId)
-            //{
-                
-            //}
+            if (pin.GetComponent<PinCollision>().getPinState() && pin.GetComponent<PinCollision>().wasHitOnce == false)
+            {
+                pin.GetComponent<PinCollision>().wasHitOnce = true;
+                gameObject.GetComponent<MP_PlayerAttributes>().points.Value++;
+            }
         }
     }
 }

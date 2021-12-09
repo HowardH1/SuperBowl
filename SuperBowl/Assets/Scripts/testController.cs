@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MLAPI;
 
-public class testController : MonoBehaviour
+public class testController : NetworkBehaviour
 {
     public Rigidbody rb;
     public FollowPlayer camera;
@@ -24,6 +25,10 @@ public class testController : MonoBehaviour
         originalRot = gameObject.transform.rotation;
         speedBuffer = speed;
         rb = GetComponent<Rigidbody>();
+        if (!IsOwner)
+        {
+            GetComponent<MeshRenderer>().material.color = Color.blue;
+        }
     }
     private void FixedUpdate()
     {
@@ -48,14 +53,14 @@ public class testController : MonoBehaviour
             canAngleTransform = false;
             if (angleTransformBuffer >= shotBounds)
             {
-                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyUp(KeyCode.A) || Input.GetKey(KeyCode.A))
+                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyUp(KeyCode.A) || Input.GetKey(KeyCode.A) && IsOwner)
                 {
                     angleTransformZAxis();
                 }
             }
             else if (angleTransformBuffer <= -shotBounds)
             {
-                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyUp(KeyCode.D) || Input.GetKey(KeyCode.D))
+                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyUp(KeyCode.D) || Input.GetKey(KeyCode.D) && IsOwner)
                 {
                     angleTransformZAxis();
                 }
@@ -69,7 +74,7 @@ public class testController : MonoBehaviour
 
     private void bowl()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyUp(KeyCode.Space) || Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyUp(KeyCode.Space) || Input.GetKey(KeyCode.Space) && IsOwner)
         {
             rb.AddForce(Camera.main.transform.forward * speed * 17);
             if (speed > 0)

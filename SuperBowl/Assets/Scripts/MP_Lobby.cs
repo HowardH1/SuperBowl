@@ -84,20 +84,34 @@ public class MP_Lobby : NetworkBehaviour
     private void SceneSwitched()
     {
         GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
-
+        GameObject storePoint = GameObject.FindGameObjectWithTag("StorePoint");
+        int index = 0;
         //spawn a playerprefab for each connected client
         foreach (MP_PlayerInfo tmpClient in nwPlayers)
         {
-            GameObject InitialLevelPosition = spawnPoint;
-            //spawn player
-            GameObject playerSpawn = Instantiate(playerPrefab, InitialLevelPosition.transform.position, Quaternion.identity);
-            playerSpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
-            // Debug.Log("Player spawned for: " + tmpClient.networkPlayerName);
-            //add chat ui
-            GameObject chatUISpawn = Instantiate(chatPrefab);
-            chatUISpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
-            chatUISpawn.GetComponent<MP_ChatUI>().chatPlayers = nwPlayers;
-            //playerPrefab.GetComponent<testController>.pinRB[] = 
+            if(index == nwPlayers.Count - 1)
+            {
+                GameObject InitialLevelPosition = storePoint;
+                //spawn first player
+                GameObject playerSpawn = Instantiate(playerPrefab, InitialLevelPosition.transform.position, Quaternion.identity);
+                playerSpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
+                //add chat ui
+                GameObject chatUISpawn = Instantiate(chatPrefab);
+                chatUISpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
+                chatUISpawn.GetComponent<MP_ChatUI>().chatPlayers = nwPlayers;
+            }
+            else
+            {
+                GameObject InitialLevelPosition = spawnPoint;
+                //spawn player in storage
+                GameObject playerSpawn = Instantiate(playerPrefab, InitialLevelPosition.transform.position, Quaternion.identity);
+                playerSpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
+                //add chat ui
+                GameObject chatUISpawn = Instantiate(chatPrefab);
+                chatUISpawn.GetComponent<NetworkObject>().SpawnWithOwnership(tmpClient.networkClientID);
+                chatUISpawn.GetComponent<MP_ChatUI>().chatPlayers = nwPlayers;
+            }
+            index++;
         }
     }
 
